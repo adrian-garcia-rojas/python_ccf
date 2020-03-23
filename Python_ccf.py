@@ -1,5 +1,19 @@
-valor_uno, valor_dos, valor_tres = 10, "adrian garcia", 10*30
+#Operadores relacionales, son simboloes para comparar valores donde optemdremos true false (boleanos)
 
-print(valor_uno)
-print(valor_dos)
-print(valor_tres)
+variable_uno = 10
+variable_dos = 18
+
+mayor = variable_uno > variable_dos
+menor = variable_uno < variable_dos
+mayor_igual = variable_uno >= variable_dos
+menor_igual = variable_uno <= variable_dos
+igual = variable_uno == variable_dos
+diferente = variable_uno != variable_dos
+
+
+print(mayor)
+print(menor)
+print(mayor_igual)
+print(menor_igual)
+print(igual)
+print(diferente)
