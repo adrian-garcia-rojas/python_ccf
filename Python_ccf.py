@@ -1,13 +1,39 @@
-#Indices y sublistas
+# Operadores comunes
 
-cursos = ["python", "django", "flask", "c", "c++", "c#", "java", "php"]
-print(cursos[0])
+lista = [8.17, 90, 1, 5, 44, 1.32]
 
-#sublista
-sub = cursos[0:3]
-sub1 = cursos[1:7:2] #quiero la lista desde la posicion 1 a la 7 con saltos de 2 en dos
-sub2 = cursos[:5] #le indica a python que requerimos los valores desde la posicion 0 a la 5
-sub3 = cursos[2:] #le indica a python que queremos los valores desde la posicion 2 a la ultima
-sub4 = cursos[:] #python copiara toda la lista tal cual esta
-sub5 = cursos[::-1] #regresara el inverso de nuestra lista (inverso)
-print(sub3)
+#vamos a ordenar la lista
+lista.sort(reverse=True)
+#si hacemos el ordenamiento lista.sort() -> tenemos un ordenamiento asc-endente
+#con (reverse = true) -> tenemos un ordenamiento desc-endente
+
+
+mayor = lista[0] # Al haver ordenado la lista de una forma desc el numero mayor sera la posicion 0
+
+
+print(lista)
+print(mayor)
+
+
+#otra forma de obtener el valor maximo y minimo seria
+
+print(".....................................>")
+
+lista2 = [8.17, 90, 1, 5, 44, 1.32]
+menor = min(lista2)
+mayor = max(lista2)
+longitud = len(lista2)
+
+print("min: ", menor)
+print("max: ", mayor)
+print("tamaño: ", longitud)
+
+
+#buscar elementos dentro de la lista
+
+resultado = 8.17 in lista2
+print("resultado de busqueda: ", resultado)
+indice = lista2.index(8.17)
+print("indice de la busqueda: ", indice)
+contador = lista.count(5)
+print("Este elemento aparece : ", contador, " en la lista2")
