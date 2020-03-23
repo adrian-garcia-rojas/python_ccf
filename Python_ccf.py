@@ -1,4 +1,4 @@
-#Operadores relacionales, son simboloes para comparar valores donde optemdremos true false (boleanos)
+#Operadores relacionales 6, son simboloes para comparar valores donde optemdremos true false (boleanos)
 
 variable_uno = 10
 variable_dos = 18
@@ -10,10 +10,14 @@ menor_igual = variable_uno <= variable_dos
 igual = variable_uno == variable_dos
 diferente = variable_uno != variable_dos
 
+comparacion_dos_numeros_enteros = variable_uno is variable_dos
 
-print(mayor)
-print(menor)
-print(mayor_igual)
-print(menor_igual)
-print(igual)
-print(diferente)
+#Operadores logicos 3, and, or, not
+
+resultado = True and True and mayor
+resultado2 = False or False or diferente
+print(resultado)
+print(resultado2)
+
+
+print("comparar si dos numeros enteros son iguales por medio de is: " + str(comparacion_dos_numeros_enteros))
